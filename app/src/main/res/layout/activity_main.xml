@@ -39,7 +39,8 @@
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
                 android:padding="16dp"
-                android:text="Team A"
+                android:text="casa"
+                android:textAllCaps="true"
                 android:textColor="#616161"
                 android:textSize="14sp"
                 android:textStyle="bold" />
@@ -112,7 +113,8 @@
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
                 android:padding="16dp"
-                android:text="Team B"
+                android:text="ospiti"
+                android:textAllCaps="true"
                 android:textColor="#616161"
                 android:textSize="14sp"
                 android:textStyle="bold" />
