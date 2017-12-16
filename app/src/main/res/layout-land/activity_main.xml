@@ -38,7 +38,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
-                android:padding="16dp"
+                android:paddingTop="16dp"
                 android:text="casa"
                 android:textAllCaps="true"
                 android:textColor="#616161"
@@ -61,12 +61,10 @@
                 android:id="@+id/punti3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="tiro3A"
-                android:text="+3 Punti"
-                android:background="@drawable/bg_giallo_piccolo"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="24dp"
-                />
+                android:background="@drawable/bg_giallo_piccolo"
+                android:onClick="tiro3A"
+                android:text="+3 Punti" />
 
             <Button
                 android:id="@+id/punti2"
@@ -96,10 +94,6 @@
 
         </LinearLayout>
 
-        <View
-            android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:background="@android:color/darker_gray"></View>
 
         <LinearLayout
             android:layout_width="0dp"
@@ -112,7 +106,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
-                android:padding="16dp"
+                android:paddingTop="16dp"
                 android:text="ospiti"
                 android:textAllCaps="true"
                 android:textColor="#616161"
@@ -135,7 +129,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="24dp"
                 android:onClick="tiro3B"
                 android:text="+3 Punti"
                 android:background="@drawable/bg_giallo_piccolo"
