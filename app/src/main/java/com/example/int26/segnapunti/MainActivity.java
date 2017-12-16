@@ -97,5 +97,51 @@ public class MainActivity extends AppCompatActivity {
         TextView scoreView = findViewById(R.id.team_b_score);
         scoreView.setText(String.valueOf(punteggio));
     }
+
+    /**
+     * Salvo le variabili che voglio ricompaiano, se non è un tipo primitivo si usa putSerialize
+     *
+     * @param outState
+     */
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        outState.putInt("PUNTEGGIOA", punteggioA);
+        outState.putInt("PUNTEGGIOB", punteggioB);
+    }
+
+    /**
+     * riesumo le variabili che avevo salvato
+     *
+     * @param savedInstanceState
+     */
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
+
+
+        punteggioA = savedInstanceState.getInt("PUNTEGGIOA");
+        punteggioB = savedInstanceState.getInt("PUNTEGGIOB");
+
+        /**
+         *
+         * Devo riscrivere a scermo i risultati delle variabili che è depositato,
+         * Le funzioni di display devono essere ritoccate un poco per essere riadattate alle variabili
+         */
+        TextView scoreViewB = findViewById(R.id.team_b_score);
+        scoreViewB.setText(String.valueOf(punteggioB));
+
+        TextView scoreViewA = findViewById(R.id.team_a_score);
+        scoreViewA.setText(String.valueOf(punteggioA));
+
+    }
+
+
+
+
+
 }
 
